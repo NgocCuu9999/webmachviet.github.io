@@ -1,0 +1,5 @@
+/* lien-he.css */
+.info p{margin-bottom:14px}
+.info a:not(.btn){color:var(--pcb);font-weight:600}
+.sent{text-align:center;padding:48px 24px}
+.sent .tick{width:68px;height:68px;border-radius:50%;background:var(--pcb);color:#fff;display:grid;place-items:center;font-size:2rem;margin:0 auto 14px}

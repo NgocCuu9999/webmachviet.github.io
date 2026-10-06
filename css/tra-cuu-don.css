@@ -1,0 +1,6 @@
+/* tra-cuu-don.css */
+.lookup{display:grid;grid-template-columns:1fr 1fr auto;gap:14px;align-items:end;margin-bottom:24px}
+.lookup .field{margin:0}
+.result{margin-bottom:30px}
+.result-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+@media(max-width:760px){.lookup{grid-template-columns:1fr}}

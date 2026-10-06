@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tin tức & kiến thức – Mạch Việt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/tin-tuc.css">
+</head>
+<body data-page="news">
+  <div id="site-header"></div>
+  <main class="container">
+    <nav class="crumbs"><a href="index.html">Trang chủ</a><i>/</i><span>Tin tức</span></nav>
+    <div class="page-head"><h1>Tin tức và kiến thức điện tử</h1><p>Hướng dẫn, so sánh linh kiện và dự án thực hành do kỹ sư của chúng tôi biên soạn.</p></div>
+    <div id="featured"></div>
+    <div class="news-tools"><div id="newsChips" class="chips"></div><label class="sr-only" for="newsSearch">Tìm bài viết</label><input class="input" id="newsSearch" type="search" placeholder="Tìm bài viết..."></div>
+    <div class="grid grid-3" id="newsGrid"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/tin-tuc.js"></script>
+</body>
+</html>

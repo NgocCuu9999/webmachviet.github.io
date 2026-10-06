@@ -1,0 +1,3 @@
+Đặt ảnh sản phẩm (jpg/png/webp) vào thư mục này.
+Sau đó khai báo trong js/data.js, mục PHOTOS. Ví dụ:
+  1: ['images/esp32-s3-1.jpg', 'images/esp32-s3-2.jpg']

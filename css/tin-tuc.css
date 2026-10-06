@@ -1,0 +1,15 @@
+/* tin-tuc.css */
+.feat{display:grid;grid-template-columns:1.2fr 1fr;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:28px}
+.feat img{width:100%;height:100%;object-fit:cover;min-height:260px}
+.feat div{padding:32px;align-self:center}
+.feat h2{font-size:1.6rem}
+.news-tools{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:20px}
+.news-tools .input{max-width:280px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{cursor:pointer}
+.news-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:block}
+.news-card:hover h3{color:var(--pcb)}
+.news-card img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.news-card div{padding:16px}.news-card small{color:var(--muted)}
+.news-card h3{margin:6px 0;font-size:1.02rem}.news-card p{font-size:.9rem;color:var(--muted);margin:0}
+@media(max-width:800px){.feat{grid-template-columns:1fr}.feat div{padding:20px}}

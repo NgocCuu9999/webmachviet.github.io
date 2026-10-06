@@ -1,0 +1,8 @@
+/* bao-gia.css */
+.qrow{display:grid;grid-template-columns:1fr 110px 36px;gap:10px;margin-bottom:10px;align-items:start}
+.qrow .del{border:0;background:var(--paper);border-radius:8px;height:44px;font-size:1.2rem}.qrow .del:hover{color:var(--red)}
+.list li{padding:6px 0 6px 22px;position:relative;font-size:.92rem}
+.list li::before{content:"";position:absolute;left:0;top:15px;width:10px;height:3px;background:var(--gold);border-radius:2px}
+.done{text-align:center;max-width:560px;margin:24px auto}
+.done .tick{width:68px;height:68px;border-radius:50%;background:var(--pcb);color:#fff;display:grid;place-items:center;font-size:2rem;margin:0 auto 14px}
+@media(max-width:560px){.qrow{grid-template-columns:1fr 80px 36px}}

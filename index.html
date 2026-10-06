@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mạch Việt – Linh kiện điện tử chính hãng, tra cứu theo mã part number</title>
+  <meta name="description" content="Mua vi điều khiển, cảm biến, IC, module và dụng cụ điện tử chính hãng. Giao nhanh, đổi trả 7 ngày.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Đúng linh kiện, đúng mã, giao trong ngày.</h1>
+          <p>Hơn 12.000 mã vi điều khiển, cảm biến, IC và module chính hãng. Nhập mã part number để xem tồn kho, datasheet và giá theo số lượng.</p>
+          <form class="hero-search" id="heroSearch" action="san-pham.html">
+            <label class="sr-only" for="heroQ">Mã linh kiện</label>
+            <input id="heroQ" name="q" type="search" placeholder="Nhập mã, ví dụ: NE555, ESP32-S3, MPU-6050" autocomplete="off">
+            <button class="btn btn-gold" type="submit">Tra cứu</button>
+          </form>
+          <div class="hero-chips"><span>Đang được tìm nhiều:</span>
+            <a class="chip chip-dark" href="san-pham.html?q=esp32">ESP32</a><a class="chip chip-dark" href="san-pham.html?q=lm358">LM358</a>
+            <a class="chip chip-dark" href="san-pham.html?q=dht22">DHT22</a><a class="chip chip-dark" href="san-pham.html?q=oled">OLED</a></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 520 420" fill="none">
+            <g class="trace" stroke="#F0B92B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M0 70 H120 L160 110 H230"/><path d="M0 130 H90 L140 180 H230"/><path d="M0 210 H230"/>
+              <path d="M0 290 H100 L150 240 H230"/><path d="M0 350 H140 L190 300 H230"/>
+              <path d="M290 110 H360 L400 70 H520"/><path d="M290 180 H380 L420 140 H520"/><path d="M290 210 H520"/>
+              <path d="M290 240 H380 L420 280 H520"/><path d="M290 300 H350 L390 350 H520"/>
+            </g>
+            <g fill="#F0B92B"><circle cx="0" cy="70" r="6"/><circle cx="0" cy="130" r="6"/><circle cx="0" cy="210" r="6"/><circle cx="0" cy="290" r="6"/><circle cx="0" cy="350" r="6"/>
+              <circle cx="520" cy="70" r="6"/><circle cx="520" cy="140" r="6"/><circle cx="520" cy="210" r="6"/><circle cx="520" cy="280" r="6"/><circle cx="520" cy="350" r="6"/></g>
+            <g class="chip-body"><rect x="228" y="80" width="64" height="260" rx="0" fill="none"/>
+              <rect x="215" y="68" width="90" height="284" rx="10" fill="#0F1C2E" stroke="#F0B92B" stroke-width="3"/>
+              <circle cx="235" cy="90" r="6" fill="#F0B92B"/>
+              <text x="260" y="200" fill="#fff" font-size="18" font-weight="700" text-anchor="middle" transform="rotate(-90 260 210)" font-family="JetBrains Mono, monospace">ESP32-S3 · N8R8</text></g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER SLIDER (mới) -->
+    <section class="banners-top" aria-label="Chương trình nổi bật">
+      <div class="container">
+        <div class="slider" id="homeSlider" role="region" aria-roledescription="carousel" aria-label="Chương trình nổi bật">
+          <div class="slides" id="slides">
+            <article class="slide s1" data-banner="slide1" role="group" aria-roledescription="slide" aria-label="1 trên 3">
+              <div class="slide-text"><span class="kicker">Hàng mới về</span><h2>Kit ESP32-S3 mới, giảm đến 16%</h2><p>Wi-Fi và Bluetooth 5, 8MB PSRAM cho dự án IoT và giao diện cảm ứng.</p><a class="btn btn-gold" href="chi-tiet.html?id=1">Mua ngay</a></div>
+              <img class="slide-art" data-pid="1" alt="" width="260" height="260">
+            </article>
+            <article class="slide s2" data-banner="slide2" role="group" aria-roledescription="slide" aria-label="2 trên 3">
+              <div class="slide-text"><span class="kicker">Học nhúng từ đầu</span><h2>Arduino UNO R3 chính hãng cho người mới</h2><p>Mua kèm breadboard và bộ dây jumper để bắt đầu dự án đầu tiên ngay hôm nay.</p><a class="btn btn-gold" href="chi-tiet.html?id=2">Xem sản phẩm</a></div>
+              <img class="slide-art" data-pid="2" alt="" width="260" height="260">
+            </article>
+            <article class="slide s3" data-banner="slide3" role="group" aria-roledescription="slide" aria-label="3 trên 3">
+              <div class="slide-text"><span class="kicker">Ưu đãi giao hàng</span><h2>Miễn phí vận chuyển cho đơn từ 500.000đ</h2><p>Giao nhanh 2 giờ nội thành TP.HCM và Hà Nội cho đơn đặt trước 16:00.</p><a class="btn btn-green" href="san-pham.html">Mua sắm ngay</a></div>
+              <img class="slide-art" data-pid="25" alt="" width="260" height="260">
+            </article>
+          </div>
+          <button class="s-btn s-prev" type="button" aria-label="Banner trước">‹</button>
+          <button class="s-btn s-next" type="button" aria-label="Banner sau">›</button>
+          <div class="s-dots" id="sDots" role="tablist" aria-label="Chọn banner"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DANH MỤC -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><h2>Mua theo danh mục</h2><a href="san-pham.html">Xem tất cả sản phẩm</a></div>
+        <div class="cat-grid" id="catGrid"></div>
+      </div>
+    </section>
+
+    <!-- BANNER NHỎ THEO CHỦ ĐỀ (mới) -->
+    <section class="section" style="padding-top:0">
+      <div class="container mini-grid">
+        <a class="mini m1" href="san-pham.html?cat=cam-bien" data-banner="mini1"><div><small>Nhà thông minh</small><h3>Cảm biến cho dự án IoT</h3><span class="more">Xem cảm biến →</span></div><img class="mini-art" data-pid="7" alt="" width="120" height="120" loading="lazy"></a>
+        <a class="mini m2" href="san-pham.html?cat=dung-cu" data-banner="mini2"><div><small>Bàn làm việc</small><h3>Mỏ hàn và đồng hồ đo</h3><span class="more">Xem dụng cụ →</span></div><img class="mini-art" data-pid="26" alt="" width="120" height="120" loading="lazy"></a>
+        <a class="mini m3" href="san-pham.html?cat=thu-dong" data-banner="mini3"><div><small>Tiết kiệm theo bộ</small><h3>Bộ kit điện trở, tụ, LED</h3><span class="more">Xem bộ kit →</span></div><img class="mini-art" data-pid="18" alt="" width="120" height="120" loading="lazy"></a>
+      </div>
+    </section>
+
+    <!-- BÁN CHẠY -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head"><h2>Bán chạy trong tháng</h2><a href="san-pham.html?sort=rating">Xem thêm</a></div>
+        <div class="grid grid-4" id="bestGrid"></div>
+      </div>
+    </section>
+
+    <!-- BANNER FLASH SALE (mới) -->
+    <section class="section" style="padding:0 0 48px">
+      <div class="container">
+        <a class="flash" href="khuyen-mai.html" data-banner="flash">
+          <div><span class="kicker">Giá tốt trong ngày</span><h2>Kết thúc sau <b class="flash-time" id="flashTime">00:00:00</b></h2><p>Hàng chục linh kiện giảm giá, số lượng có hạn.</p></div>
+          <span class="btn btn-gold">Xem khuyến mãi</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- MUA SỈ -->
+    <section class="section">
+      <div class="container bulk">
+        <div class="bulk-text">
+          <h2>Mua số lượng lớn càng nhiều càng rẻ</h2>
+          <p>Trường học, xưởng lắp ráp và nhóm khởi nghiệp nhận báo giá trong 30 phút. Tự động chiết khấu theo bậc, xuất hoá đơn VAT đầy đủ.</p>
+          <a class="btn btn-gold" href="lien-he.html?subject=bao-gia">Yêu cầu báo giá</a>
+        </div>
+        <table class="bulk-table" aria-label="Chiết khấu theo số lượng">
+          <thead><tr><th>Số lượng</th><th>Chiết khấu</th></tr></thead>
+          <tbody><tr><td>1 - 9</td><td>Giá niêm yết</td></tr><tr><td>10 - 49</td><td>5%</td></tr><tr><td>50 - 199</td><td>10%</td></tr><tr><td>200 trở lên</td><td>15%</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- HÀNG MỚI -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><h2>Hàng mới về</h2><a href="san-pham.html?sort=new">Xem thêm</a></div>
+        <div class="grid grid-4" id="newGrid"></div>
+      </div>
+    </section>
+
+    <!-- BANNER ĐÔI HỖ TRỢ (mới) -->
+    <section class="section" style="padding-top:0">
+      <div class="container duo">
+        <a class="duo-card d1" href="lien-he.html?subject=tu-van" data-banner="duo1"><div><small>Hỗ trợ kỹ thuật</small><h3>Chưa biết chọn linh kiện nào?</h3><p>Kỹ sư tư vấn miễn phí, phản hồi trong 1 giờ làm việc.</p><span class="more">Gửi câu hỏi →</span></div></a>
+        <a class="duo-card d2" href="bao-hanh.html#tra-cuu" data-banner="duo2"><div><small>Sau bán hàng</small><h3>Tra cứu bảo hành trong 10 giây</h3><p>Nhập mã trên tem để xem thời hạn và tình trạng bảo hành.</p><span class="more">Tra cứu ngay →</span></div></a>
+      </div>
+    </section>
+
+    <!-- THƯƠNG HIỆU -->
+    <section class="section alt">
+      <div class="container">
+        <h2>Thương hiệu chúng tôi phân phối</h2>
+        <div class="brands" id="brands"></div>
+      </div>
+    </section>
+
+    <!-- TIN TỨC -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><h2>Kiến thức cho người làm điện tử</h2><a href="tin-tuc.html">Tất cả bài viết</a></div>
+        <div class="grid grid-3" id="homeNews"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng nhập / Đăng ký – Mạch Việt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/dang-nhap.css">
+</head>
+<body data-page="account">
+  <div id="site-header"></div>
+  <main class="container">
+    <div class="auth">
+      <section class="auth-side">
+        <h1>Một tài khoản cho mọi đơn linh kiện</h1>
+        <ul><li>Theo dõi đơn hàng và lịch sử mua sắm</li><li>Lưu địa chỉ giao hàng, đặt lại chỉ một chạm</li><li>Nhận bảng giá sỉ và ưu đãi riêng cho thành viên</li></ul>
+        <p class="demo">Tài khoản thử nghiệm:<br><b>demo@machviet.vn</b> / <b>123456</b></p>
+      </section>
+      <section class="panel auth-form">
+        <div class="tabs" role="tablist"><button class="active" data-tab="login">Đăng nhập</button><button data-tab="register">Đăng ký</button></div>
+        <form id="loginForm" novalidate>
+          <div class="field"><label for="lEmail">Email</label><input class="input" id="lEmail" type="email" autocomplete="email"><span class="err">Vui lòng nhập email hợp lệ.</span></div>
+          <div class="field"><label for="lPass">Mật khẩu</label><div class="pw"><input class="input" id="lPass" type="password" autocomplete="current-password"><button type="button" class="pw-toggle" data-pw="lPass">Hiện</button></div><span class="err" id="lPassErr">Vui lòng nhập mật khẩu.</span></div>
+          <button class="btn btn-gold btn-block" type="submit">Đăng nhập</button>
+        </form>
+        <form id="regForm" hidden novalidate>
+          <div class="field"><label for="rName">Họ và tên</label><input class="input" id="rName" autocomplete="name"><span class="err">Vui lòng nhập họ tên.</span></div>
+          <div class="row2"><div class="field"><label for="rEmail">Email</label><input class="input" id="rEmail" type="email" autocomplete="email"><span class="err">Email chưa hợp lệ.</span></div>
+          <div class="field"><label for="rPhone">Số điện thoại</label><input class="input" id="rPhone" inputmode="tel" autocomplete="tel"><span class="err">Số điện thoại gồm 10 chữ số.</span></div></div>
+          <div class="row2"><div class="field"><label for="rPass">Mật khẩu</label><div class="pw"><input class="input" id="rPass" type="password" autocomplete="new-password"><button type="button" class="pw-toggle" data-pw="rPass">Hiện</button></div><span class="err">Tối thiểu 6 ký tự.</span></div>
+          <div class="field"><label for="rPass2">Nhập lại mật khẩu</label><input class="input" id="rPass2" type="password" autocomplete="new-password"><span class="err">Mật khẩu nhập lại chưa khớp.</span></div></div>
+          <button class="btn btn-gold btn-block" type="submit">Tạo tài khoản</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/dang-nhap.js"></script>
+</body>
+</html>

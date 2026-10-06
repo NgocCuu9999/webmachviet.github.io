@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>So sánh sản phẩm – Mạch Việt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/so-sanh.css">
+</head>
+<body data-page="compare">
+  <div id="site-header"></div>
+  <main class="container">
+    <nav class="crumbs"><a href="index.html">Trang chủ</a><i>/</i><span>So sánh sản phẩm</span></nav>
+    <div class="page-head"><h1>So sánh sản phẩm</h1><p>Đặt tối đa 4 sản phẩm cạnh nhau để chọn đúng thông số. Bấm biểu tượng ⇄ trên thẻ sản phẩm để thêm.</p></div>
+    <div class="cmp-bar">
+      <label class="check"><input type="checkbox" id="onlyDiff"> Chỉ hiện điểm khác biệt</label>
+      <div class="cmp-add"><label class="sr-only" for="addSel">Thêm sản phẩm</label><select class="select" id="addSel"></select><button class="btn btn-green btn-sm" id="addCmp" type="button">Thêm</button></div>
+    </div>
+    <div id="cmpArea"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/so-sanh.js"></script>
+</body>
+</html>

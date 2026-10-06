@@ -1,0 +1,28 @@
+/* san-pham.css – trang danh sách sản phẩm */
+.shop{display:grid;grid-template-columns:260px 1fr;gap:26px;align-items:start}
+.filters{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;position:sticky;top:136px;max-height:calc(100vh - 156px);overflow-y:auto}
+.f-block{padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid var(--line)}
+.f-block h3{font-size:.95rem;margin-bottom:10px}
+.check{display:flex;gap:10px;align-items:center;padding:5px 0;cursor:pointer;font-size:.92rem}
+.check input{accent-color:var(--pcb);width:17px;height:17px}
+.check small{margin-left:auto;color:var(--muted)}
+.toolbar{display:flex;align-items:center;gap:14px;margin-bottom:18px;flex-wrap:wrap}
+.toolbar p{margin:0;flex:1}
+.tool-right{display:flex;gap:10px;align-items:center}
+.tool-right .select{width:auto}
+.view-toggle{display:flex;border:1.5px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
+.view-toggle button{border:0;background:#fff;padding:9px 13px;font-size:1rem}
+.view-toggle button.on{background:var(--pcb);color:#fff}
+#fToggle{display:none}
+#productGrid.list{grid-template-columns:1fr}
+#productGrid.list .pcard{flex-direction:row}
+#productGrid.list .pcard-img{width:210px;aspect-ratio:auto;flex:none}
+#productGrid.list .pcard-body{padding:16px 20px}
+#productGrid.list .price-row{margin-top:6px}
+@media(max-width:900px){
+  .shop{grid-template-columns:1fr}
+  #fToggle{display:inline-flex}
+  .filters{display:none;position:static;max-height:none;overflow:visible}
+  .filters.open{display:block}
+}
+@media(max-width:560px){#productGrid.list .pcard-img{width:120px}}

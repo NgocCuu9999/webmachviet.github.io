@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Báo giá doanh nghiệp – Mạch Việt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/bao-gia.css">
+</head>
+<body data-page="quote">
+  <div id="site-header"></div>
+  <main class="container">
+    <nav class="crumbs"><a href="index.html">Trang chủ</a><i>/</i><span>Báo giá doanh nghiệp</span></nav>
+    <div class="page-head"><h1>Yêu cầu báo giá số lượng lớn</h1><p>Dành cho trường học, xưởng lắp ráp và nhóm khởi nghiệp. Nhận bảng giá chiết khấu theo bậc trong vòng 30 phút (giờ hành chính).</p></div>
+    <div id="quoteRoot" class="two-col">
+      <form class="panel" id="quoteForm" novalidate>
+        <h3>Thông tin liên hệ</h3>
+        <div class="row2"><div class="field"><label for="qCompany">Tên đơn vị <i>*</i></label><input class="input" id="qCompany"><span class="err">Vui lòng nhập tên đơn vị.</span></div><div class="field"><label for="qName">Người liên hệ <i>*</i></label><input class="input" id="qName"><span class="err">Vui lòng nhập họ tên.</span></div></div>
+        <div class="row2"><div class="field"><label for="qPhone">Số điện thoại <i>*</i></label><input class="input" id="qPhone" inputmode="tel"><span class="err">Số điện thoại gồm 10 chữ số.</span></div><div class="field"><label for="qEmail">Email <i>*</i></label><input class="input" id="qEmail" type="email"><span class="err">Email chưa hợp lệ.</span></div></div>
+        <h3 style="margin-top:8px">Danh sách linh kiện cần báo giá</h3>
+        <div id="qRows"></div>
+        <button class="btn btn-line btn-sm" type="button" id="qAdd">+ Thêm dòng</button>
+        <div class="field" style="margin-top:18px"><label for="qNote">Ghi chú (mục đích sử dụng, thời hạn giao hàng)</label><textarea class="textarea" id="qNote"></textarea></div>
+        <button class="btn btn-gold" type="submit">Gửi yêu cầu báo giá</button>
+      </form>
+      <aside class="panel side-col"><h3>Quyền lợi khách doanh nghiệp</h3>
+        <table class="table"><thead><tr><th>Số lượng</th><th>Chiết khấu</th></tr></thead><tbody><tr><td>10 - 49</td><td>5%</td></tr><tr><td>50 - 199</td><td>10%</td></tr><tr><td>200+</td><td>15%</td></tr></tbody></table>
+        <ul class="list" style="margin-top:14px"><li>Hoá đơn VAT và chứng nhận CO/CQ</li><li>Công nợ 30 ngày cho đơn vị đã ký hợp đồng</li><li>Kỹ sư tư vấn thay thế linh kiện tương đương</li></ul></aside>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/bao-gia.js"></script>
+</body>
+</html>

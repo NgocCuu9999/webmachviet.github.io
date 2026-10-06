@@ -1,0 +1,18 @@
+/* gio-hang.css */
+.cart-item{display:grid;grid-template-columns:90px 1fr auto auto 36px;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.cart-item:last-child{border:0}
+.cart-item img{width:90px;height:90px;border-radius:8px;background:#EDF2EF}
+.cart-item h3{font-size:.98rem;margin:0 0 4px}.cart-item h3 a:hover{color:var(--pcb)}
+.ci-price{font-weight:700;min-width:110px;text-align:right}
+.qty{display:flex;border:1.5px solid var(--line);border-radius:8px;background:#fff;overflow:hidden}
+.qty button{width:34px;border:0;background:#fff;font-size:1.1rem}.qty button:hover{background:var(--pcb-soft)}
+.qty input{width:48px;text-align:center;border:0;border-inline:1.5px solid var(--line);font-weight:700}
+.ci-del{border:0;background:none;color:var(--muted);font-size:1.4rem;line-height:1}.ci-del:hover{color:var(--red)}
+.sum-row{display:flex;justify-content:space-between;padding:8px 0}
+.sum-row.total{border-top:1px solid var(--line);margin-top:8px;padding-top:14px;font-size:1.15rem;font-weight:800}
+.coupon{display:flex;gap:8px;margin:14px 0}
+.coupon .input{flex:1}
+.coupon-msg{font-size:.85rem;margin:-6px 0 10px}
+.ship-bar{height:8px;background:var(--line);border-radius:4px;overflow:hidden;margin:6px 0 4px}
+.ship-bar i{display:block;height:100%;background:var(--pcb);transition:width .3s}
+@media(max-width:700px){.cart-item{grid-template-columns:70px 1fr 32px;grid-template-areas:"img info del" "img qty price"}.cart-item img{grid-area:img;width:70px;height:70px}.cart-item .ci-info{grid-area:info}.cart-item .qty{grid-area:qty;width:fit-content}.cart-item .ci-price{grid-area:price}.cart-item .ci-del{grid-area:del}}

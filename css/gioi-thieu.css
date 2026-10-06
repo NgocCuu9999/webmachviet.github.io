@@ -1,0 +1,16 @@
+/* gioi-thieu.css */
+.about-hero{background:var(--pcb-deep);color:#fff;padding:64px 0}
+.about-hero h1{max-width:22ch}.about-hero p{color:#c5d6cf;max-width:60ch;font-size:1.08rem;margin:0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.stats div{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;text-align:center}
+.stats b{display:block;font-size:2.2rem;color:var(--pcb);line-height:1.1}
+.stats b::after{content:"+"}
+.stats span{color:var(--muted);font-size:.9rem}
+.values{margin-top:16px}
+.timeline{list-style:none;padding:0;margin:20px 0 0;border-left:3px solid var(--gold)}
+.timeline li{padding:0 0 22px 24px;position:relative}
+.timeline li::before{content:"";position:absolute;left:-10px;top:4px;width:17px;height:17px;border-radius:50%;background:#fff;border:4px solid var(--pcb)}
+.timeline b{font-size:1.1rem}.timeline p{margin:2px 0 0;color:var(--muted);max-width:60ch}
+@media(max-width:800px){.stats{grid-template-columns:1fr 1fr}}
+.stats div{min-width:0}
+@media(max-width:560px){.stats b{font-size:1.6rem}.stats div{padding:18px 10px}}

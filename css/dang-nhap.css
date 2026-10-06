@@ -1,0 +1,12 @@
+/* dang-nhap.css */
+.auth{display:grid;grid-template-columns:1fr 1.1fr;margin:36px 0;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.auth-side{background:var(--pcb-deep);color:#fff;padding:44px}
+.auth-side h1{font-size:clamp(1.5rem,2.6vw,2.1rem);max-width:16ch}
+.auth-side li{padding:9px 0 9px 28px;position:relative;color:#c5d6cf}
+.auth-side li::before{content:"";position:absolute;left:0;top:17px;width:14px;height:3px;background:var(--gold);border-radius:2px}
+.demo{margin-top:26px;background:rgba(255,255,255,.08);padding:14px 16px;border-radius:8px;font-size:.9rem;color:#c5d6cf}
+.demo b{color:var(--gold);font-family:var(--mono);font-weight:500}
+.auth-form{border:0;border-radius:0;padding:40px}
+.pw{position:relative}.pw .input{padding-right:64px}
+.pw-toggle{position:absolute;right:6px;top:6px;bottom:6px;border:0;background:var(--paper);border-radius:6px;padding:0 12px;font-size:.82rem;font-weight:600}
+@media(max-width:860px){.auth{grid-template-columns:1fr}.auth-side{padding:28px}.auth-form{padding:24px}}

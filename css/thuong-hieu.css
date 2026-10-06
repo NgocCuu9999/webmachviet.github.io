@@ -1,0 +1,8 @@
+/* thuong-hieu.css */
+.brand-tools{max-width:380px;margin-bottom:20px}
+.brand-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:block}
+.brand-card:hover{border-color:var(--pcb)}
+.brand-card .imgs{display:grid;grid-template-columns:repeat(2,1fr)}
+.brand-card img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.brand-card div.txt{padding:14px 16px;border-top:1px solid var(--line)}
+.brand-card b{font-size:1.05rem;display:block}.brand-card span{color:var(--muted);font-size:.85rem}

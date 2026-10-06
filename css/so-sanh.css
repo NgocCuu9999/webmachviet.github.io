@@ -1,0 +1,12 @@
+/* so-sanh.css */
+.cmp-bar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.cmp-add{display:flex;gap:8px}.cmp-add .select{min-width:260px}
+.cmp{min-width:720px}
+.cmp th{width:170px;background:var(--paper);font-size:.88rem}
+.cmp td{min-width:200px}
+.cmp .head td{text-align:center;vertical-align:top}
+.cmp .head img{width:150px;height:150px;margin:0 auto 8px;border-radius:8px}
+.cmp .head a{font-weight:600;display:block;margin-bottom:6px}
+.cmp .head a:hover{color:var(--pcb)}
+.cmp .diff td{background:#fff9e6}
+.rm{background:none;border:0;color:var(--red);font-size:.82rem;text-decoration:underline;margin-top:6px}

@@ -1,0 +1,20 @@
+MẠCH VIỆT – Website bán linh kiện điện tử (chỉ giao diện, không cần database)
+
+CÁCH CHẠY: giải nén, mở file index.html bằng trình duyệt (Chrome/Edge/Firefox). Cần internet để tải font Google.
+
+CẤU TRÚC
+  *.html        21 trang, mỗi trang một file
+  css/base.css  CSS dùng chung; css/<trang>.css là CSS riêng của từng trang
+  images/       Đặt ảnh sản phẩm thật vào đây (khai báo trong PHOTOS của data.js)
+  js/data.js    Danh sách 28 sản phẩm + danh mục (sửa ở đây để đổi hàng hoá)
+  js/content.js Bài viết, cửa hàng, hỏi đáp, đơn hàng mẫu
+  js/layout.js  Header, footer, giỏ hàng, yêu thích, so sánh (dùng chung)
+  js/<trang>.js JavaScript riêng của từng trang
+
+DỮ LIỆU THỬ NGHIỆM
+  Tài khoản: demo@machviet.vn / 123456
+  Đơn hàng:  MV240001 / 0901234567
+  Bảo hành:  MV-BH-100234
+  Mã giảm giá: LINHKIEN10, MACHVIET50, FREESHIP
+Giỏ hàng, yêu thích, tài khoản được lưu bằng localStorage của trình duyệt.
+Đổi tên cửa hàng: sửa BRAND ở đầu js/data.js.

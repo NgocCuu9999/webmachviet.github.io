@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sản phẩm linh kiện điện tử – Mạch Việt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/san-pham.css">
+</head>
+<body data-page="products">
+  <div id="site-header"></div>
+  <main class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Trang chủ</a><i>/</i><span id="crumbCat">Sản phẩm</span></nav>
+    <div class="page-head"><h1 id="listTitle">Tất cả sản phẩm</h1><p id="listSub">Lọc theo danh mục, hãng và khoảng giá để tìm đúng linh kiện.</p></div>
+
+    <div class="shop">
+      <aside class="filters" id="filters" aria-label="Bộ lọc">
+        <div class="f-block"><h3>Danh mục</h3><div id="fCats"></div></div>
+        <div class="f-block"><h3>Thương hiệu</h3><div id="fBrands"></div></div>
+        <div class="f-block"><h3>Khoảng giá</h3><div id="fPrice"></div></div>
+        <div class="f-block"><label class="check"><input type="checkbox" id="fStock"> Chỉ hiện hàng còn trong kho</label></div>
+        <button class="btn btn-line btn-block" id="fReset" type="button">Xoá bộ lọc</button>
+      </aside>
+
+      <section>
+        <div class="toolbar">
+          <button class="btn btn-line btn-sm" id="fToggle" type="button">Bộ lọc</button>
+          <p id="resultCount" class="muted" role="status"></p>
+          <div class="tool-right">
+            <label class="sr-only" for="sortSel">Sắp xếp</label>
+            <select class="select" id="sortSel">
+              <option value="popular">Phổ biến nhất</option><option value="rating">Đánh giá cao</option><option value="new">Mới nhất</option>
+              <option value="price-asc">Giá tăng dần</option><option value="price-desc">Giá giảm dần</option>
+            </select>
+            <div class="view-toggle" role="group" aria-label="Kiểu hiển thị"><button type="button" data-view="grid" class="on" aria-label="Dạng lưới">▦</button><button type="button" data-view="list" aria-label="Dạng danh sách">☰</button></div>
+          </div>
+        </div>
+        <div class="grid grid-3" id="productGrid"></div>
+        <div class="pager" id="pager"></div>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/san-pham.js"></script>
+</body>
+</html>

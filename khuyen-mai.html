@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Khuyến mãi – Mạch Việt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/khuyen-mai.css">
+</head>
+<body data-page="sale">
+  <div id="site-header"></div>
+  <main>
+    <section class="sale-hero"><div class="container">
+      <h1>Giá tốt trong ngày</h1><p>Số lượng có hạn, kết thúc lúc 23:59 hôm nay.</p>
+      <div class="countdown" id="countdown" aria-live="off"><div><b id="cdH">00</b><span>giờ</span></div><div><b id="cdM">00</b><span>phút</span></div><div><b id="cdS">00</b><span>giây</span></div></div>
+    </div></section>
+    <div class="container">
+      <section class="section"><div class="section-head"><h2>Mã giảm giá</h2></div><div class="grid grid-3" id="coupons"></div></section>
+      <section class="section" style="padding-top:0"><div class="section-head"><h2>Sản phẩm giảm giá</h2></div>
+        <div class="tabs" id="saleTabs"></div>
+        <div class="grid grid-4" id="saleGrid"></div></section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/khuyen-mai.js"></script>
+</body>
+</html>

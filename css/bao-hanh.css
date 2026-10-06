@@ -1,0 +1,7 @@
+/* bao-hanh.css */
+.pol .panel{margin-bottom:18px;scroll-margin-top:140px}
+.wh-form{display:flex;gap:10px;margin:14px 0}
+.list li{padding:6px 0 6px 22px;position:relative}
+.list li::before{content:"";position:absolute;left:0;top:15px;width:10px;height:3px;background:var(--gold);border-radius:2px}
+.wh-res{border-radius:var(--radius);padding:16px 18px;margin-top:6px;border:1px solid var(--line)}
+.wh-res.ok{background:var(--pcb-soft);border-color:#b6d7cb}.wh-res.no{background:#fbeceb;border-color:#f0c4c0}

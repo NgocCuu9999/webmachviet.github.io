@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tra cứu đơn hàng – Mạch Việt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/tra-cuu-don.css">
+</head>
+<body data-page="order">
+  <div id="site-header"></div>
+  <main class="container">
+    <nav class="crumbs"><a href="index.html">Trang chủ</a><i>/</i><span>Tra cứu đơn hàng</span></nav>
+    <div class="page-head"><h1>Tra cứu đơn hàng</h1><p>Nhập mã đơn và số điện thoại đặt hàng để xem tiến trình giao hàng. Mã thử nghiệm: MV240001 / 0901234567.</p></div>
+    <form class="panel lookup" id="orderForm" novalidate>
+      <div class="field"><label for="oCode">Mã đơn hàng</label><input class="input" id="oCode" placeholder="Ví dụ: MV240001" autocomplete="off"></div>
+      <div class="field"><label for="oPhone">Số điện thoại</label><input class="input" id="oPhone" inputmode="tel" placeholder="0901234567"></div>
+      <button class="btn btn-gold" type="submit">Tra cứu</button>
+    </form>
+    <div id="orderResult" aria-live="polite"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/tra-cuu-don.js"></script>
+</body>
+</html>

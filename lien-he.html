@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liên hệ – Mạch Việt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/lien-he.css">
+</head>
+<body data-page="contact">
+  <div id="site-header"></div>
+  <main class="container">
+    <nav class="crumbs"><a href="index.html">Trang chủ</a><i>/</i><span>Liên hệ</span></nav>
+    <div class="page-head"><h1>Liên hệ với chúng tôi</h1><p>Kỹ sư của chúng tôi phản hồi trong vòng 1 giờ làm việc.</p></div>
+    <div class="two-col" id="contactRoot">
+      <form class="panel" id="contactForm" novalidate>
+        <div class="row2"><div class="field"><label for="cName">Họ và tên <i>*</i></label><input class="input" id="cName" autocomplete="name"><span class="err">Vui lòng nhập họ tên.</span></div><div class="field"><label for="cPhone">Số điện thoại <i>*</i></label><input class="input" id="cPhone" inputmode="tel"><span class="err">Số điện thoại gồm 10 chữ số.</span></div></div>
+        <div class="row2"><div class="field"><label for="cEmail">Email</label><input class="input" id="cEmail" type="email"><span class="err">Email chưa hợp lệ.</span></div>
+        <div class="field"><label for="cSubject">Chủ đề</label><select class="select" id="cSubject"><option value="tu-van">Tư vấn chọn linh kiện</option><option value="bao-gia">Báo giá số lượng lớn</option><option value="don-hang">Hỏi về đơn hàng</option><option value="bao-hanh">Bảo hành, đổi trả</option><option value="khac">Khác</option></select></div></div>
+        <div class="field"><label for="cMsg">Nội dung <i>*</i></label><textarea class="textarea" id="cMsg" placeholder="Mô tả dự án hoặc câu hỏi của bạn"></textarea><span class="err">Vui lòng nhập nội dung (ít nhất 10 ký tự).</span></div>
+        <button class="btn btn-gold" type="submit">Gửi liên hệ</button>
+      </form>
+      <aside>
+        <div class="panel info"><h3>Thông tin liên hệ</h3>
+          <p><b>Hotline</b><br><a href="tel:19006868">1900 6868</a> (8:00 - 20:00)</p>
+          <p><b>Email</b><br>ban-hang@machviet.vn</p>
+          <p><b>Trụ sở</b><br>123 Đường Điện Tử, Phường Bến Nghé, Quận 1, TP.HCM</p>
+          <a class="btn btn-line btn-sm" href="cua-hang.html">Xem hệ thống cửa hàng</a></div>
+        <div class="panel info" style="margin-top:18px"><h3>Cần báo giá lớn?</h3><p class="muted">Dùng biểu mẫu riêng để gửi danh sách linh kiện kèm số lượng.</p><a class="btn btn-green btn-sm" href="bao-gia.html">Yêu cầu báo giá</a></div>
+      </aside>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/lien-he.js"></script>
+</body>
+</html>

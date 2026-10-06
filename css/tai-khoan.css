@@ -1,0 +1,10 @@
+/* tai-khoan.css */
+.acc{display:grid;grid-template-columns:260px 1fr;gap:24px;align-items:start}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.stat b{display:block;font-size:1.7rem;color:var(--pcb)}.stat span{color:var(--muted);font-size:.88rem}
+.order{border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;margin-bottom:12px;background:#fff;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.order .info{flex:1;min-width:200px}
+.addr{border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;margin-bottom:10px;display:flex;justify-content:space-between;gap:12px;background:#fff}
+.addr button{border:0;background:none;color:var(--red);text-decoration:underline;font-size:.85rem}
+@media(max-width:860px){.acc{grid-template-columns:1fr}.stats{grid-template-columns:1fr}}
